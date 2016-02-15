@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/product_partial"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="15dp"
+              android:orientation="vertical"
+              android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/gtin_lot_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/label_right_margin"
+                android:text="@string/gtin_label"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/product_header_gtin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/label_right_margin"
+                android:text="@string/lot_label"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/product_header_lot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lt_gray"
+        android:padding="10dp"
+        android:visibility="gone" />
+
+</LinearLayout>

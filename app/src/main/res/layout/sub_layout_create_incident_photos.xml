@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/incident_photo_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_padding">
+
+    <Button
+        android:id="@+id/incident_take_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/add_pictures"
+        android:textStyle="bold" />
+
+    <GridView
+        android:id="@+id/incident_pictures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="75dp"
+        android:horizontalSpacing="2dp"
+        android:isScrollContainer="false"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp" />
+
+</LinearLayout>

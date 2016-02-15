@@ -1,0 +1,16 @@
+<android.support.design.widget.TextInputLayout
+    android:id="@+id/label"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:hintTextAppearance="@style/label">
+
+    <EditText
+        android:id="@+id/value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:singleLine="true"/>
+</android.support.design.widget.TextInputLayout>

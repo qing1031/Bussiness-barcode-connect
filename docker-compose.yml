@@ -1,0 +1,9 @@
+android:
+  build: .
+  command: ./environment-setup.sh
+  environment:
+  - AWS_ACCESS_KEY_ID  
+  - AWS_SECRET_ACCESS_KEY  
+  - AWS_BUCKET
+  volumes:
+  - .:/apkSource

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="datawedge_enabled" translatable="false">datawedge_enabled</string>
+    <string name="ignore_datawedge" translatable="false">ignoreDataWedge</string>
+    <string name="datawedge_exists" translatable="false">datawedge_exists</string>
+
+    <string name="current_business_id" translatable="false">businessId</string>
+    <string name="current_business_foodlogiq_id" translatable="false">businessFoodlogiqId</string>
+    <string name="current_business_name" translatable="false">businessName</string>
+
+    <string name="current_community_foodlogiq_id" translatable="false">communityFoodlogiqId</string>
+
+    <string name="current_location_id" translatable="false">locationId</string>
+    <string name="current_location_foodlogiq_id" translatable="false">locationFoodlogiqId</string>
+    <string name="current_location_name" translatable="false">locationName</string>
+    <string name="current_location_gln" translatable="false">locationGln</string>
+    <string name="current_location_internal_id" translatable="false">locationInternalId</string>
+    <string name="default_location" translatable="false">defaultLocation</string>
+
+    <string name="singleBusinessOverride" translatable="false">singleBusinessOverride</string>
+</resources>

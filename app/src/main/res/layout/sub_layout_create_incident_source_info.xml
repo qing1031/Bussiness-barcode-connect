@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/incident_source_info_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/product_source" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5">
+
+                    <RadioButton
+                        android:id="@+id/product_source_supply_chain_supplier_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/supplier" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5">
+
+
+                    <RadioButton
+                        android:id="@+id/product_source_store_bought_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/store_bought" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/product_source_store_bought_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/incident_store"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:hint="@string/store_id"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:minWidth="140dp"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/label_right_margin"
+                android:text="@string/pack_date" />
+
+            <TextView
+                android:id="@+id/incident_packed_date"
+                style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:gravity="right|center_vertical"
+                android:minWidth="140dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/label_right_margin"
+                android:text="@string/use_by_date" />
+
+            <TextView
+                android:id="@+id/incident_use_thru_date"
+                style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:gravity="right|center_vertical"
+                android:minWidth="140dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/label_right_margin"
+                android:text="@string/quantity" />
+
+            <EditText
+                android:id="@+id/incident_quantity_affected"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:gravity="right|center_vertical"
+                android:hint="@string/quantity"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLines="1"
+                android:minWidth="140dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/incident_request_credit_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/label_right_margin"
+                android:text="@string/request_credit" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/incident_request_credit_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/incident_invoice_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/incident_invoice_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/invoice_number"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/label_right_margin"
+                    android:text="@string/invoice_date" />
+
+                <TextView
+                    android:id="@+id/incident_invoice_date"
+                    style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height"
+                    android:gravity="right|center_vertical"
+                    android:minWidth="140dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/label_right_margin"
+                    android:text="@string/distributor" />
+
+                <Spinner
+                    android:id="@+id/incident_invoice_distributor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height"
+                    android:gravity="right"
+                    android:minWidth="140dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

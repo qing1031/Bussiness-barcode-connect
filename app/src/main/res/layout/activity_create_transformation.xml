@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include layout="@layout/sub_layout_create_transformation_info"/>
+
+        <LinearLayout
+            android:id="@+id/transform_custom_attributes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <include layout="@layout/custom_attributes_form"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inputs_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/inputs_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/transformation_inputs"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <include layout="@layout/sub_layout_scan_list"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/outputs_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/outputs_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/transformation_outputs"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <include layout="@layout/sub_layout_scan_list"/>
+        </LinearLayout>
+
+        <include layout="@layout/sub_layout_create_transformation_confirm"/>
+
+    </LinearLayout>
+</LinearLayout>

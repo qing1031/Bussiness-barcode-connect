@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_background"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/layout_padding"
+    android:paddingTop="@dimen/layout_padding">
+
+    <LinearLayout
+        android:id="@+id/business_name_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/business_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3" />
+
+        <TextView
+            android:id="@+id/business_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

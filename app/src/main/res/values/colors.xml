@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lter_gray">#EEEEEE</color>
+    <color name="material_switch_slide_inactive">#D7E7FF</color>
+    <color name="material_switch_slide_active">#3061BE</color>
+    <color name="material_switch_ball_active">#5992FB</color>
+    <color name="material_switch_ball_inactive">#FFFFFF</color>
+</resources>

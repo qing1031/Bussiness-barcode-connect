@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/create_incident_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include layout="@layout/partial_product" />
+
+        <include layout="@layout/sub_layout_create_incident_scan" />
+
+        <include layout="@layout/sub_layout_create_incident_enter_lot" />
+
+        <include layout="@layout/sub_layout_create_incident_source_info" />
+
+        <include layout="@layout/sub_layout_create_incident_problem" />
+
+        <include layout="@layout/sub_layout_create_incident_photos" />
+
+        <include layout="@layout/sub_layout_create_incident_confirm" />
+
+    </LinearLayout>
+
+</LinearLayout>

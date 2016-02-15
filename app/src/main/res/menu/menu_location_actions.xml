@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.foodlogiq.tracetools.activities.LocationActionsActivity">
+    <item
+        android:id="@+id/select_location"
+        android:orderInCategory="100"
+        android:title="@string/select_location" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="@string/logout" />
+</menu>

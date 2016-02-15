@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/back_next_button_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lt_gray"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/bottom_back_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".50"
+        android:background="@drawable/bottom_button"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/back_fa_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/bottom_back_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/back"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_back_dummy_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".50"
+        android:background="@drawable/bottom_button"
+        android:gravity="right"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/back"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/back_dummy_fa_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_next_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".50"
+        android:background="@drawable/bottom_button"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/bottom_next_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/next"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/next_fa_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_next_dummy_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".50"
+        android:background="@drawable/bottom_button"
+        android:gravity="right"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/next_dummy_fa_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+
+    </LinearLayout>
+</LinearLayout>

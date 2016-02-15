@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- API Paths -->
+
+    <string name="api_list_businesses" translatable="false">ng/businesses</string>
+    <string name="api_location_search" translatable="false">ng/businesses/:businessId/locations/search/:locationInternalId</string>
+    <string name="api_list_products" translatable="false">ng/businesses/:businessId/products</string>
+    <string name="api_product_search" translatable="false">ng/communities/:communityId/products/search/:productGlobalTradeItemNumber</string>
+    <string name="api_create_incident" translatable="false">ng/businesses/:businessId/incidents</string>
+    <string name="api_create_event" translatable="false">ng/businesses/:businessId/events/:eventType</string>
+    <string name="api_update_incident_images" translatable="false">ng/businesses/:businessId/incidents/:incidentId/updateimages</string>
+    <string name="api_send_incident_report" translatable="false">ng/businesses/:businessId/incidents/:incidentId/sendIncidentReport</string>
+    <string name="api_get_event_types" translatable="false">ng/businesses/:businessId/events/types/:eventType</string>
+
+    <!-- End API Paths -->
+
+</resources>
